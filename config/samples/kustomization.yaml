@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- hunting_v1_bowhunter.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

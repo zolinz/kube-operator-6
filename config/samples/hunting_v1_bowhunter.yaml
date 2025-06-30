@@ -1,0 +1,11 @@
+apiVersion: hunting.zoli.com/v1
+kind: Bowhunter
+metadata:
+  labels:
+    app.kubernetes.io/name: kube-operator-6
+    app.kubernetes.io/managed-by: kustomize
+  name: bowhunter-sample
+spec:
+  bow:
+    brand: "Hoyt"
+    drawWeight: 80

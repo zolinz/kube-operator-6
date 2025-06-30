@@ -1,0 +1,23 @@
+# permissions for end users to view bowhunters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: kube-operator-6
+    app.kubernetes.io/managed-by: kustomize
+  name: bowhunter-viewer-role
+rules:
+- apiGroups:
+  - hunting.zoli.com
+  resources:
+  - bowhunters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - hunting.zoli.com
+  resources:
+  - bowhunters/status
+  verbs:
+  - get

@@ -1,0 +1,27 @@
+# permissions for end users to edit bowhunters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: kube-operator-6
+    app.kubernetes.io/managed-by: kustomize
+  name: bowhunter-editor-role
+rules:
+- apiGroups:
+  - hunting.zoli.com
+  resources:
+  - bowhunters
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - hunting.zoli.com
+  resources:
+  - bowhunters/status
+  verbs:
+  - get

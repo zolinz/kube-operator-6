@@ -8,7 +8,7 @@ on:
 jobs:
   do-my-thing:
     runs-on: ubuntu-latest
-  steps:
-    - name: Run a script
-      run: |
-        echo "Im running from a workflow"
+    steps:
+      - name: Run a script
+        run: |
+          echo "Im running from a workflow"

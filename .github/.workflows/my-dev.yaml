@@ -1,0 +1,14 @@
+name: My DEV workflow
+
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  do-my-thing:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Run a script
+      run: |
+        echo "Im running from a workflow"

@@ -8,6 +8,7 @@ on:
 jobs:
   do-my-thing:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - name: Run a script
         run: |
